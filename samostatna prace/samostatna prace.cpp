@@ -1,15 +1,13 @@
-﻿#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    int cislo = 6;
-    int soucetsudy = 0;
-    int soucetlichy = 0;
-    for (int i = 1; i <= cislo; i++) {
-        if (i % 2 == 0) soucetsudy += i;
-        else if (i % 2 != 0) soucetlichy += i;
-
+int soucet(cislo) {
+    int suda = 0;
+    for (int i = 0; i <= cislo; i += 2) {
+        suda += i;
     }
-    printf("sudy soucet: %d\n", soucetsudy);
-    printf("lichy soucet: %d\n", soucetlichy);
+    return suda;
+}
+
+int main() {
+    printf("Soucet sudych: %d\n", soucet(5));
 }
