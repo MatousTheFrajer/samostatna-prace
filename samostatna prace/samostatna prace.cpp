@@ -9,5 +9,5 @@ int soucet(cislo) {
 }
 
 int main() {
-    printf("Soucet sudych: %d\n", soucet(5));
+    printf("Soucet sudych: %d\n", soucet(12));
 }
